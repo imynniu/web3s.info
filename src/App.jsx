@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
 import { WagmiConfig } from "wagmi";
 import { arbitrum, mainnet } from "viem/chains";
 
+import { themeChange } from "theme-change";
+
+import Navbar from "./module/Navbar.jsx";
+import WalletTest from "./module/WalletTest.jsx";
+import HooksTest from "./module/HooksTest.jsx";
 // 1. Get projectId at https://cloud.walletconnect.com
 const projectId = "5bee67266ed902fd9d745ddc96495e2d";
 
@@ -21,10 +26,17 @@ const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });
 createWeb3Modal({ wagmiConfig, projectId, chains });
 
 function App() {
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
+
   return (
     <WagmiConfig config={wagmiConfig}>
-      <w3m-network-button />
-      <w3m-button />
+      <Navbar></Navbar>
+      <w3m-button label="钱包" />
+      {/* <WalletTest></WalletTest> */}
+      <HooksTest></HooksTest>
     </WagmiConfig>
   );
 }
