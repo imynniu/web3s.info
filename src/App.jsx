@@ -5,9 +5,9 @@ import { arbitrum, mainnet } from "viem/chains";
 
 import { themeChange } from "theme-change";
 
-import Navbar from "./module/Navbar.jsx";
-import WalletTest from "./module/WalletTest.jsx";
-import HooksTest from "./module/HooksTest.jsx";
+import Drawer from "./module/Drawer.jsx";
+import Router from "./router.jsx/index.jsx";
+
 // 1. Get projectId at https://cloud.walletconnect.com
 const projectId = "5bee67266ed902fd9d745ddc96495e2d";
 
@@ -33,10 +33,10 @@ function App() {
 
   return (
     <WagmiConfig config={wagmiConfig}>
-      <Navbar></Navbar>
-      <w3m-button label="钱包" />
-      {/* <WalletTest></WalletTest> */}
-      <HooksTest></HooksTest>
+      <Router />
+
+      <Drawer></Drawer>
+      {/* <w3m-button label="钱包" /> */}
     </WagmiConfig>
   );
 }

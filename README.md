@@ -6,15 +6,19 @@
 
 使用技术
 
-| 技术        | 简介             | 文档                                      |
-| ----------- | ---------------- | ----------------------------------------- |
-| react       | 前端框架         | https://react.zcopy.site/                 |
-| tailwindcss | 组件样式         | https://tailwind.nodejs.cn/               |
-| ethers.js   | 于区块链交互     | https://docs.ethers.org/v6/               |
-| solidity    | 智能合约编写语言 | https://solidity-cn.readthedocs.io/       |
-| vite        | 前端脚手架       | https://ptymt.cn/                         |
-| web3modal   | 集成钱包         | https://docs.walletconnect.com/quickstart |
-|             |                  |                                           |
+| 技术         | 简介             | 文档                                      |
+| ------------ | ---------------- | ----------------------------------------- |
+| react        | 前端框架         | https://react.zcopy.site/                 |
+| tailwindcss  | 组件样式         | https://tailwind.nodejs.cn/               |
+| ethers.js    | 于区块链交互     | https://docs.ethers.org/v6/               |
+| solidity     | 智能合约编写语言 | https://solidity-cn.readthedocs.io/       |
+| vite         | 前端脚手架       | https://ptymt.cn/                         |
+| web3modal    | 集成钱包         | https://docs.walletconnect.com/quickstart |
+| daisyUI      | 免费UI库         | https://daisyui.com/docs/install/         |
+| Theme-change | 更换网站主体颜色 | https://github.com/saadeghi/theme-change# |
+|              |                  |                                           |
+|              |                  |                                           |
+|              |                  |                                           |
 
 
 
