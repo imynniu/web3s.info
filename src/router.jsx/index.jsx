@@ -11,17 +11,22 @@ import Home from "../pages/home/Home";
 import About from "../pages/about/about";
 import ProjectLayout from "../layout/projectLayout";
 import NotFund from "../pages/NotFund";
+import Index from "../pages";
 
 //路由导航
 const routes = [
   {
+    path: "/",
+    element: <Index />,
+  },
+  {
     path: "*",
     element: <NotFund />,
   },
-  {
-    path: "/",
-    element: <Navigate to={"home"} />,
-  },
+  // {
+  //   path: "/",
+  //   element: <Navigate to={"index"} />,
+  // },
   {
     path: "/",
     element: <Layout />,
