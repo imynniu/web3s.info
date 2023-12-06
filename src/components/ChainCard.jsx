@@ -38,7 +38,7 @@ const ChainCard = () => {
             切换网络
           </button>
           <button
-            className="btn btn-sm btn-outline btn-warning "
+            className="btn btn-sm btn-outline btn-warning w-auto "
             onClick={() => open({ view: "Account" })}
             // onClick={() => disconnect()}
           >

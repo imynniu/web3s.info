@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import Avatar from "../components/Avatar";
 import ChainCard from "../components/ChainCard";
 import UserInfoCard from "../components/UserInfoCard";
 import { useAccount, useConnect } from "wagmi";
 import { useDisconnect } from "wagmi";
+
 const Drawer = () => {
   const { connector: activeConnector, isConnected } = useAccount();
   const { disconnect } = useDisconnect();
@@ -32,8 +34,9 @@ const Drawer = () => {
           </li> */}
 
           <button
-            class="btn btn-neutral btn-wide btn-sm"
+            className="btn btn-neutral btn-wide btn-sm"
             onClick={() => disconnect()}
+            to={"home"}
           >
             {isConnected ? "退出登录" : "重新连接"}
           </button>

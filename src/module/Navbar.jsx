@@ -7,9 +7,11 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const { address, isConnecting, isDisconnected, isConnected } = useAccount();
   return (
-    <div className="navbar bg-base-100 sticky top-0 ">
+    <div className="navbar bg-base-100 sticky top-0  glass">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link className="btn btn-ghost text-xl" to={"/"}>
+          wStar
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -17,17 +19,6 @@ const Navbar = () => {
             <Link to={"/home"}>Home</Link>
           </li>
           <li>
-            {/* <details>
-              <summary>Project</summary>
-              <ul className="p-2">
-                <li>
-                  <Link to={"project/project1"}>Project 1</Link>
-                </li>
-                <li>
-                  <Link to={"project/project2"}>Project 2</Link>
-                </li>
-              </ul>
-            </details> */}
             <div className="dropdown dropdown-hover  dropdown-bottom">
               <div tabIndex={0}>Project</div>
               <ul
